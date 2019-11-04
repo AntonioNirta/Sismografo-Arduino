@@ -1,3 +1,5 @@
+//Code written by Antonio Nirta (www.intrageo.it)
+
 #include <SD.h> //Load SD card library
 #include<SPI.h> //Load SPI Library
 #include "Wire.h"    // imports the wire library for talking over I2C 
@@ -123,3 +125,7 @@ void beep(unsigned char delayms){
   digitalWrite(buzzerPin,LOW);
   delay(delayms); // wait for a delayms ms
 }
+
+
+
+ 
