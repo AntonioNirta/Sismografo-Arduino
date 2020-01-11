@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import (
     FigureCanvasTkAgg, NavigationToolbar2Tk)
 from matplotlib.figure import Figure
-import click
 from tkinter import Tk, ttk, Menu, TOP as TKTOP, BOTH as TKBOTH
 from tkinter.filedialog import askopenfilename
 
