@@ -1,5 +1,6 @@
 # Code written by Antonio Nirta
 
+from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import (
@@ -40,7 +41,7 @@ class Gui(ttk.Frame):
 
     def fileDialog(self):
         csv_file = askopenfilename(
-            initialdir="",
+            initialdir=Path.home(),
             title="Select A File",
             filetypes=(("csv", "*.csv"), )
             )
