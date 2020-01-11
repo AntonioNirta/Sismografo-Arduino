@@ -1,4 +1,5 @@
-# Code written by Antonio Nirta
+# Copyright 2019 Antonio Nirta <info@intrageo.it>
+# License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
 from pathlib import Path
 import pandas as pd

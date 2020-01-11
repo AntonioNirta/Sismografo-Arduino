@@ -1,4 +1,7 @@
-//Code written by Antonio Nirta (www.intrageo.it)
+/*
+  Copyright 2019 Antonio Nirta <info@intrageo.it>
+  License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
+*/
 
 #include <SD.h> //Load SD card library
 #include<SPI.h> //Load SPI Library
