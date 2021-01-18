@@ -50,12 +50,6 @@ void setup(){
    Wire.endTransmission();
 
 
-  if (!SD.begin(4)) {
-    Serial.println("Errore SD");
-    return;
-  }
-  Serial.println("SD pronta");
-
   if (SD.exists("example.txt")) {
       SD.remove("example.txt");
   }
@@ -109,13 +103,6 @@ time = millis();
 File file = SD.open("LOG.csv", FILE_WRITE);
 String parametri = String(AcX) + "," + String(AcY) + "," + String(AcZ) + "," + String(time);
     
-  if (parametri)
-  {
-    file.println(parametri);
-    file.close();
-    Serial.println(parametri);
-  }
-
 }
 
 //Instructions for beep buzzer
@@ -125,6 +112,7 @@ void beep(unsigned char delayms){
   digitalWrite(buzzerPin,LOW);
   delay(delayms); // wait for a delayms ms
 }
+
 
 
 
